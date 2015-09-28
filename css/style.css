@@ -4,8 +4,9 @@
   padding: 0;
 }
 body {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ul,
@@ -13,12 +14,30 @@ ol {
   list-style: none;
 }
 
+/**
+ * header
+ */
 .header {
   padding: 25px 0;
+  background: #FFFFFF;
   margin: 0 0 10px;
+  color: #000000;
   text-align: center;
   margin-bottom: 0;
 }
+
+/*.header::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #333948;
+  display: block;
+  border-radius: 100%;
+  box-shadow: 25px 0 0 #333948, 50px 0 0 #333948;
+  margin-left: 15px;
+  position: absolute;
+  top: 25px;
+}*/
 
 @media screen and (max-width: 640px) {
   .header::before {
@@ -45,7 +64,7 @@ ol {
 }
 
 .module.inbox-view {
-  background-color: #313744;
+  background-color: #F48814;
   color: #D5DDE0;
   left: 0;
   width: 30%;
